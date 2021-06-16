@@ -1,0 +1,121 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 130
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- sistema_informacao:
+    use_entities: true
+- sistema_objetivo:
+    use_entities: true
+- curso_da_area:
+    use_entities: true
+- sentiment:
+    use_entities: true
+- ciencia_computacao:
+    use_entities: true
+- analise_desenvolvimento_sistemas:
+    use_entities: true
+- gestao_tecnologia_informacao:
+    use_entities: true
+- engenharia_computacao:
+    use_entities: true
+- rede_computadores:
+    use_entities: true
+- banco_dados:
+    use_entities: true
+- programacao:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Ei! Como você está?
+  utter_cheer_up:
+  - image: https://imgur.com/gallery/7cZHqDO
+    text: 'Aqui está algo para animá-lo:'
+  utter_did_that_help:
+  - text: Isso te ajudou?
+  utter_happy:
+  - text: Ótimo! vamos começar, pergunte algo relacionado ao curso de sistema de informação.
+  utter_goodbye:
+  - text: Ate!!
+  
+  
+  utter_iamabot:
+  - text: Eu sou um robo de um chatbot? rs
+
+
+
+  utter_sistema_informacao:
+  - text: |-
+      Sistema de informações, por definição, constitui também um sistema pelo qual são obtidos dados
+      para as operações de controle e planejamento da emprêsa. Em síntese, o sistema de informações
+      gera dados de forma esquematizada e ordenada, os quais fornecem subsídios
+      para o processo de tomada de decisões.
+  utter_sistema_objetivo:
+  - text: |-
+      O objetivo central do sistema de informações deve ser o de desenvolver e expandir as bases para as
+       decisões administrativas. Sugere-se que êsse sistema seja considerado como um órgão de staff, não apenas
+       para as tarefas de planejamento propriamente ditas, como também para os demais setores da emprêsa, os quais
+       poderão dele receber ou solicitar informações. Mais especificamente, o sistema de informações deverá fornecer informações, processadas mediante solicitação
+       explícita, ou não, de outros. Estas informações têm como objetivo prover os executivos com dados para que o trinômio
+  utter_curso_da_area:
+  - text: |2-
+       Aqui esta alguns cursos dessa area Ciência da Computação.
+       Sistemas de Informação.
+       Análise e Desenvolvimento de Sistemas.
+       Gestão da Tecnologia da Informação.
+       Engenharia da Computação.
+       Rede de Computadores.
+       Banco de Dados.
+  utter_ciencia_computacao:
+  - text: |-
+      Ciência da computação é a ciência que estuda as técnicas, metodologias, instrumentos 
+       computacionais e aplicações tecnológicas, que informatizem os processos e desenvolvam soluções de 
+       processamento de dados de entrada e saída pautados no computador.
+  utter_analise_desenvolvimento_sistemas:
+  - text: |-
+      Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a 
+      fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de 
+      sistemas estudam os diversos sistemas existentes entre hardwares, softwares e o usuário final.
+  utter_gestao_tecnologia_informacao:
+  - text: |-
+      O curso de Gestão da Tecnologia da Informação capacita profissionais para desempenhar funções na gestão de 
+       empresas utilizando a tecnologia como principal ferramenta. O objetivo é tornar alunos capazes de gerir e controlar 
+       os processos tecnológicos da empresa.
+  utter_engenharia_computacao:
+  - text: ' O profissional formado em Engenharia da Computação é capaz de projetar e construir hardware e software. O hardware consiste na parte física do computador, suas estruturas e componentes e seus periféricos (como teclado, mouse e monitor). Nessa área, o engenheiro de computação faz a integração de circuitos eletrônicos da máquina e desenvolve placas de ligação entre o equipamento e seus acessórios. Na área de desenvolvimento de software o engenheiro da computação cria programas de computadores e aplicativos para os mais diversos fins.'
+  utter_rede_computadores:
+  - text: |-
+      O  curso de Redes de Computadores é oferecido em grau superior tecnológico (curso de tecnólogo) em instituições 
+       públicas e privadas. Com duração média de dois anos, é bastante focado na prática da profissão e prepara os alunos para 
+       ingressarem rapidamente no mercado de trabalho. O tecnólogo em Redes de Computadores tem alta empregabilidade. Em parte pelo caráter prático do curso, em parte por que o 
+       mercado de Tecnologia da Informação (TI) em geral está aquecido e faltam profissionais qualificados para preencher todas as vagas que são abertas regularmente.
+  utter_banco_dados:
+  - text: |-
+      Bancos de dados ou bases de dados são conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas. São coleções organizadas 
+       de dados que se relacionam de forma a criar algum sentido e dar mais eficiência durante uma pesquisa ou estudo cientifico.
+  utter_programacao:
+  - text: |-
+      O programador é o profissional que cria, desenvolve e mantém diferentes tipos de softwares em sistemas amplos ou para uso em computadores
+       pessoais. Ele usa linguagens de programação, como python, java, c++, para criar comandos em programas, criando novas funcionalidades e utilidades.
+actions:
+- action_sentiment
+forms: {}
+e2e_actions: []

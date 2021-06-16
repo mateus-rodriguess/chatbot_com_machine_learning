@@ -1,0 +1,184 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Olá
+    - Oi
+    - Eae
+    - hello there
+    - Bom dia
+    - Vamos lá
+    - eae mano
+    - Eae
+    - Boa tarde
+
+- intent: goodbye
+  examples: |
+    - Tchau
+    - Te vejo mais tarde
+    - Boa noite
+    - Até
+    - flw
+    - falou
+    - Tenha um bom dia
+    - Vejo você por aí
+    - Até logo
+
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - na verdade
+    - é claro
+    - isso soa bem
+    - correto
+
+- intent: deny
+  examples: |
+    - não
+    - n
+    - nao
+    - nunca
+    - acho que não
+    - não gosto disso
+    - de jeito nenhum
+    - Na verdade não
+    - claro que nao
+
+- intent: mood_great
+  examples: |
+    - perfeito
+    - excelente
+    - surpreendente
+    - sentindo-se como um rei
+    - maravilhoso
+    - Estou me sentindo muito bem
+    - Estou estou ótimo
+    - eu sou incrível
+
+- intent: mood_unhappy
+  examples: |
+    - meu dia foi horrível
+    - Estou triste
+    - Não me sinto muito bem
+    - estou desapontado
+    - super triste
+    - eu estou tão triste
+    - triste
+
+
+- intent: bot_challenge
+  examples: |
+    - Você é um robô?
+    - Você é um humano?
+    - estou falando com um bot?
+    - estou falando com um humano?
+    - é um robô?
+
+- intent: sistema_informacao
+  examples: |
+    - oque é sistema de informção
+    - Eu queria saber oque faz no curso de sistema de informação 
+    - me explica oque é sistema de informação e pra que serve
+
+- intent: sistema_objetivo
+  examples: |
+    - pra que sistema de informação?
+    - pra que serve sistema de informação?
+    - serve pra que S.I?
+
+- intent: curso_da_area
+  examples: |
+    - Qual curso escolher nesta area?
+    - Cursos dessa area, sabe me informar
+    - Curso na area de T.I
+    - Qual curso fazer pra t.i
+    - Qual curso posso fazer pra entrar na area de ti, estou com duvida?
+
+- intent: ciencia_computacao
+  examples: |
+    - fale sobre ciência da computação
+    - Oque cientista da computação faz?
+    - Oque é ciência da computação ?
+    - ciência da computação
+
+- intent: analise_desenvolvimento_sistemas
+  examples: |
+    - fale sobre Análise e Desenvolvimento de Sistema
+    - Oque Analista de desenvolvimento de Sistema faz?
+    - Oque é um Análise de Desenvolvimento de Sistema ?
+    - Análise e Desenvolvimento de Sistema 
+
+- intent: gestao_tecnologia_informacao
+  examples: |
+    - fale sobre Gestão da Tecnologia da Informação
+    - Oque Gestor da Tecnologia da Informação faz?
+    - Oque Gestão da Tecnologia da Informação ?
+    - Gestão da Tecnologia da Informação
+
+- intent: engenharia_computacao
+  examples: |
+    - fale sobre Engenharia da Computação
+    - Oque  um engenheiro da Computação faz?
+    - Oque Gestão da Tecnologia da Informação ?
+    - Gestão da Tecnologia da Informação
+
+- intent: rede_computadores
+  examples: |
+    - fale sobre rede de computadores
+    - Oque engenheiro de redes faz?
+    - Oque Rede de Computadores ?
+    - Rede de Computadores
+
+- intent: banco_dados
+  examples: |
+    - fale sobre Banco de Dados
+    - Oque DBA faz?
+    - Oque Banco de Dados?
+    - Banco de Dados
+
+- intent: programacao
+  examples: |
+    - programador oque faz?
+    - programação, linguagem de programação
+    - oque um progrador faz?
+
+
+- intent: sentiment
+  examples: |
+    - Eu não conseguir enteder oque você quis dizer
+    - Eu não estou feliz com sua arrogancia
+    - Não estou endendendo, voçê ta falando tudo errado
+    - Explica melhor ai cara
+    - Entendi nada não
+    - Explica direito
+    - Não entendi 
+    - Oque? não entendi nada do que foi faldo 
+    - Isso não fez sentindo algom, isso que você falou 
+    - wft, que isso? não foi oque eu pergutei
+    - Explica de novo
+    - Explica direito 
+    - estou satisfeito com a sua resposta.
+    - Não entendi muito bem oque você quis dizer com isso
+    - A resposta foi otimo
+    - Não tem nada aver com oque eu pergutei mano
+    - eu nâo entendi bot
+    - eu estou otimo, era isso mesmo que eu queria saber
+    - esta otimo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

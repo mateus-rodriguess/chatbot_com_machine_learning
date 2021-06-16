@@ -1,0 +1,7 @@
+*.pyc
+.env
+__pycache__
+Pipfile.lock
+.idea
+.vscode
+venvbot

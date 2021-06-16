@@ -1,0 +1,153 @@
+version: "2.0"
+
+stories: 
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: sistema_informacao path 1
+  steps:
+  - intent: sistema_informacao
+  - action: utter_sistema_informacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: sistema_objetivo
+  - action: utter_sistema_objetivo
+  - intent: sentiment
+  - action: action_sentiment
+
+  
+- story: ciencia_computacao path 1
+  steps:
+  - intent: ciencia_computacao
+  - action: utter_ciencia_computacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: analise_desenvolvimento_sistemas
+  - action:  utter_analise_desenvolvimento_sistemas
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: gestao_tecnologia_informacao
+  - action: utter_gestao_tecnologia_informacao
+  - intent: sentiment
+  - action: action_sentiment
+
+
+- story: analise_desenvolvimento_sistemas path 1
+  steps:
+  - intent: analise_desenvolvimento_sistemas
+  - action: utter_analise_desenvolvimento_sistemas
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: gestao_tecnologia_informacao
+  - intent: sentiment
+  - action: action_sentiment
+  - action: utter_gestao_tecnologia_informacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: engenharia_computacao
+  - action: utter_engenharia_computacao
+  - intent: sentiment
+  - action: action_sentiment
+
+
+- story: gestao_tecnologia_informacao path 1
+  steps:
+  - intent: gestao_tecnologia_informacao
+  - action: utter_gestao_tecnologia_informacao
+  - intent: sentiment
+  - action: action_sentiment
+  - action: utter_gestao_tecnologia_informacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: engenharia_computacao
+  - action: utter_engenharia_computacao
+  - intent: sentiment
+  - action: action_sentiment
+
+
+- story: engenharia_computacao path 1
+  steps:
+  - intent: engenharia_computacao
+  - action: utter_engenharia_computacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: rede_computadores
+  - action: utter_rede_computadores
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: banco_dados
+  - action: utter_banco_dados
+  - intent: sentiment
+  - action: action_sentiment
+
+- story: rede_computadores path 1
+  steps:
+  - intent: rede_computadores
+  - action: utter_rede_computadores
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: banco_dados
+  - action: utter_banco_dados
+  - intent: sentiment
+  - action: action_sentiment
+
+- story: banco_dadoss path 1
+  steps:
+  - intent: banco_dados
+  - action: utter_banco_dados
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: sistema_informacao
+  - action: utter_sistema_informacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: sistema_objetivo
+  - action: utter_sistema_objetivo
+  - intent: sentiment
+  - action: action_sentiment
+
+- story: programacao
+  steps:
+  - intent: programacao
+  - action: utter_programacao
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: rede_computadores
+  - action: utter_rede_computadores
+  - intent: sentiment
+  - action: action_sentiment
+  - intent: banco_dados
+  - action: utter_banco_dados
+  - intent: sentiment
+  - action: action_sentiment
+  
+  
+# - story: sentiment path 1
+#   steps:
+#   - intent: sentiment
+#   - action: action_sentiment
+
